@@ -1,2 +1,1 @@
-# cal.howland
-Academic Website
+# parisvalenceworkshop2025.github.io

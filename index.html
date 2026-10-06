@@ -1,270 +1,48 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Cal Howland</title>
-		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-		<style>
-			/* CSS goes here, at the top of the page */	
-			@import url('https://fonts.googleapis.com/css?family=PT+Sans');
-			@import url('https://fonts.googleapis.com/css?family=PT+Serif');
 
-			h1, h2, h4, h5, h6 {
-				font-family: 'PT Serif', 'Helvetica', 'Merriweather';;
-			}
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <meta charset="utf-8">
+  <title>Cal Howland</title>
+</head>
 
-			html, body {
-				margin: 0;
-				padding: 0;
-				font-family: 'PT Serif', 'Helvetica', 'Merriweather';
-			}
-			#top-bar {
-				width: 100%;
-				background: #F1F1F1; /* light gray */
-				border-bottom: 1px solid #D4D4D4; /* dark gray "underline" */
-				height: 25px;
-			}
-			.normal-wrapper {
-				width: 900px;
-				margin: 0 auto;
-				padding: 15px 40px;
-				overflow: auto;
-			}
-			.logo-icon {
-				color: #000000;
-				font-size: 60pt;
-				float: left;
-			}
-			h1 {
-				float: left;
-				margin: 21px 0 0 25px;
-			}
-			#navbar {
-			    list-style-type: none; /* remove bullet points */
-			    margin: 29px 0 0 0;
-			    padding: 0;
-			    float: right;
-			    font-size: 16pt;
-			}
-			#navbar li {
-			    display: inline; /* make items horizontal */
-			}
-			#navbar li a:link, #navbar li a:visited, #navbar li a:active { 
-				text-decoration: none; /* remove underline */
-				color: #000000;
-				padding: 0 16px 0 10px; /* space links apart */
-				margin: 0;
-				border-right: 2px solid #B4B4B4; /* divider */
-			}
-			#navbar li a:link.last-link {
-				/* remove divider */
-				border-right: 0px;
-			}
-			#navbar li a:hover {
-				/* change color on hover (mouseover) */
-				color: #858383;
-			}
-			#top-color-splash {
-				width: 100%;
-				height: 4px;
-				background: #858383;
-			}
-			.one-third {
-				width: 40%;
-				float: left;
-				box-sizing: border-box; /* ensure padding and borders do not increase the size */
-				margin-top: 20px;
-			}
-			.two-third {
-				width: 60%;
-				float: left;
-				box-sizing: border-box; /* ensure padding and borders do not increase the size */
-				padding-left: 40px;
-				text-align: right;
-				margin-top: 20px;
-			}
-			.featured-image {
-				max-width: 500px; /* reduce image size while maintaining aspect ratio */
-			}
-			.no-margin-top {
-				margin-top: 0; /* remove margin on things like headers */
-			}
-			#quote-area {
-				background: #363636;
-				color: #FFFFFF;
-				text-align: center;
-				padding: 15px 0;
-			}
-			h3 {
-				font-weight: normal;
-				font-size: 20pt;
-				margin-top: 0px;
-			}
-			h4 {
-				font-weight: normal;
-				font-size: 16pt;
-				margin-bottom: 0;
-			}
-			.icon-outer {
-				box-sizing: border-box; /* ensure padding and borders do not increase the size */
-				float: left;
-				width: 33.33%;
-				padding: 25px;
-				margin: 0;
-				text-align: center;
-			}
-			.icon-circle {
-				background: #EEEEEE;
-				color: #B4B4B4; 
-				width: 200px;
-				height: 200px;
-				border-radius: 200px; /* make rounded corners */
-				margin: 0 auto;
-				border: 2px solid #D6D6D6;
-				box-sizing: border-box; /* ensure padding and borders do not increase the size */
-				font-size: 75pt;
-				padding: 30px 0 0 0;
-				cursor: pointer;
-			}
-			.icon-circle:hover {
-				/* change color on hover (mouseover) */
-				color: #FFFFFF;
-				background: #EB6361; /* red */
-			}
-			h5 {
-				margin: 15px 0 10px 0;
-				font-size: 20pt;
-			}
-			#footer {
-				width: 100%;
-				background: #F1F1F1; /* light gray */
-				border-top: 1px solid #D4D4D4; /* dark gray "topline" */
-				height: 150px;
-			}
-			.hidden {
-				display: none;
-			}
-		</style>
-	</head>
-	<body>
-		<div id="top-bar"></div>
+<body>
 
-		<div class="normal-wrapper">
-			<div id="logo-container">
-				<!i class="fa fa-volume-down logo-icon"><!/i><h1>Cal Howland</h1>
-			</div>
+<div align="center">
+  <nav>
+    <a href="index.html"><strong>Home</strong></a>
+    <a href="pages/publications.html">Publications</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="pages/contact.html">Contact</a>
+  </nav>
+</div>
 
-			<ul id="navbar">
-				<li><a href="index.html">Me</a></li>
-				<li><a href="Teaching.html">Teaching</a></li>
-				<li><a href="Research.html">Research</a></li>
-				<li><a href="Syllabi.html">Syllabi</a></li>
-				<li><a href=""Extra.html">Miscellaneous</a></li>
-			</ul>
+<h1 id="toc_0">Callan Howland</h1>
 
-		</div>
+<div class="about">
+  <img src="images/cal.jpg" alt="Callan Howland" class="profile-photo">
 
-		<div id="top-color-splash"></div>
+  <div class="large-text">
+    Callan (Cal for short) received their PhD in Philosophy from Rutgers University.
+    They work at the interface of semantics, pragmatics and psycholinguistics, with
+    a particular eye toward the role of perspectives in lexical meaning. Drawing on
+    both experimental and theoretical methodology, their research revolves around
+    questions like: How capable are hearers in accommodating stubborn speakers?
+    How conversationally flexible are lexically encoded perspectives? Do different
+    categories of lexical items (e.g. predicates of personal taste, relative motion
+    verbs, socio-cultural relative terms) exercise different constraints on the
+    perspectives they invoke? Topics they have worked on include relative locative
+    terms, socio-cultural relatives, and epithets and thick terms.
+  </div>
+</div>
 
-		<div class="normal-wrapper">
-			<div>
-				<h2 class="no-margin-top">  </h2>
-				<p> I am a postdoctoral fellow at the Rutgers Center for Cognitive Science. </p>
-				<p> I defended my dissertation in Philosophy at Rutgers University in Summer 2024 under Elisabeth Camp.</p>				
-				<p> Broadly, I work on the role of perspective sensitivity in lexical processing by thinking about the ways that socially rich linguistic items, like deadnames, chosen names, pronouns, slurs challenge traditional theory of communication.</p>
-				<p> I think about this work in three parts:</p>
-				<p style="margin-left: 40px">(i) By theorizing an intersubjective perspective that speakers employ in the use of perspective sensitive items (PSIs) which is takes into account the relative prominence and strength of interlocutors' positions and how relatively incontrovertable a piece of information is in context. </p>
-				<p style="margin-left: 40px">(ii) Exploring the ways in which normative harm arises loaded language (e.g. slurs, deadnames, thick terms) in conversation from either breakdowns in or intentional violations of this intersubjective perspective </p>
-				<p style="margin-left: 40px">(iii) And then stepping back and looking more broadly at the social structures that govern these conversational dynamics, and their ethical implications in social access such as technology for the disabled (e.g. assistive technology for disabled people) and structural barriers to transgender people (e.g. name changes and pronoun mistakes) </p>
-			</div>
-			<!div class="two-third">
-				<!img id="f-image-1" class="featured-image" src=" " />
-				<!img id="f-image-2" class="featured-image hidden" src="    " />
-				<!img id="f-image-3" class="featured-image hidden" src="   " />
-			<!/div>
-		</div>
+<div class="spacer"></div>
 
-		<div id="quote-area">
-			<div class="normal-wrapper">
-				<h3> <p>    </p></h3>
-				<h4>09/26/2026</h4>
-			</div>
-		</div>
+<h4>Contact info</h4>
+cal.howland@rutgers.edu
 
-		<!--div class="normal-wrapper">
-			<!div class="icon-outer">
-				<!div class="icon-circle">
-					<i class="fa fa-tasks"></i>
-				</div>
-				<h5> Teaching </h5>
-				<p> List of class developed and taught, along with syllabi </p>
-			</div>
+</body>
 
-			<div class="icon-outer">
-				<div class="icon-circle">
-					<i class="fa fa-video-camera"></i>
-				</div>
-				<h5> Research </h5>
-				<p> Papers published and in progress </p>
-			</div>
-
-			<div class="icon-outer">
-				<div class="icon-circle">
-					<i class="fa fa-plus"></i>
-				</div>
-				<h5> Syllabi </h5>
-				<p> Syllabi for courses taught, as well as prospective syllabi </p>
-			</div>
-		</div> -->
-
-		<div id="footer"></div>
-
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
-
-		<script type="text/javascript">
-			/* JavaScript goes here, at the bottom of the page */
-			$(document).ready(function() {
-			    // run once the page is ready
-			    var time = 2500;
-			    // get the image containers
-			    $im1 = $('#f-image-1');
-			    $im2 = $('#f-image-2');
-			    $im3 = $('#f-image-3');
-
-			    setInterval(function(){
-			    	// call function every x milliseconds (defined in time variable above)
-			    	changeImage();
-			    }, time);
-
-			    var currentImage = 1;
-
-			    function changeImage(){
-			    	switch(currentImage) {
-					    case 1:
-					        // show image 2
-					    	$im1.hide();
-					    	$im2.show();
-					    	$im3.hide();
-					        currentImage = 2;
-					        break;
-					    case 2:
-					    	// show image 3
-					    	$im1.hide();
-					    	$im2.hide();
-					    	$im3.show();
-					        currentImage = 3;
-					        break;
-					    default:
-					   	    // show image 1
-					    	$im1.show();
-					    	$im2.hide();
-					    	$im3.hide();
-					        currentImage = 1;
-					}
-			    }
-			});
-		</script>
-	</body>
 </html>
