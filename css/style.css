@@ -565,3 +565,14 @@ details.sub-toggle { margin-left: 26px; }
     margin-left: 6px;
     white-space: nowrap;
 }
+
+h4.eval-heading {
+    font-size: 18px;
+    border-bottom: none;
+    margin: 18px 0 4px;
+}
+details.section-toggle h3 { margin-top: 28px; }
+
+/* ---------- Home: areas + contact ---------- */
+.areas { margin: 4px 0 !important; font-size: 18px; }
+.areas + .contact-line, .contact-line { margin-top: 18px !important; color: #444444; font-size: 18px; }
