@@ -480,3 +480,88 @@ details[open] {
     .profile-photo { width: 220px; height: 293px; }
     .cv-item { grid-template-columns: 70px 1fr; column-gap: 16px; }
 }
+
+
+/* ---------- Collapsible teaching sections ---------- */
+
+details.section-toggle,
+details.sub-toggle {
+    display: block;
+}
+
+details.section-toggle > summary,
+details.sub-toggle > summary {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    color: black;
+}
+
+details.section-toggle > summary::before,
+details.sub-toggle > summary::before {
+    content: "\25B8";
+    color: #63B7F8;
+    flex-shrink: 0;
+}
+
+details.section-toggle[open] > summary::before,
+details.sub-toggle[open] > summary::before {
+    content: "\25BE";
+}
+
+details.section-toggle > summary:hover,
+details.sub-toggle > summary:hover { color: #555555; }
+
+details.section-toggle > summary h2,
+details.sub-toggle > summary h3 {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+details.section-toggle > summary::before { font-size: 24px; margin-top: 20px; }
+details.sub-toggle > summary::before { font-size: 18px; margin-top: 20px; }
+
+details.section-toggle > summary h2 { flex: 1; }
+
+details.section-toggle { margin-bottom: 10px; }
+
+details.sub-toggle { margin-left: 26px; }
+
+.course-desc {
+    font-size: 16px;
+    color: #444444;
+    margin: 6px 0 0;
+}
+
+/* ---------- Evaluations table ---------- */
+
+.eval-table {
+    width: 100%;
+    margin: 10px 0 30px;
+    font-size: 17px;
+}
+
+.eval-table th { text-align: left; background: #f8f8f8; }
+.eval-table td[rowspan] { vertical-align: top; }
+
+@media screen and (max-width: 700px) {
+    details.sub-toggle { margin-left: 12px; }
+    .eval-table { font-size: 15px; }
+    .eval-table th, .eval-table td { padding: 6px 8px; }
+}
+
+/* ---------- Home page bio ---------- */
+.large-text p { margin: 0 0 14px; }
+.large-text p.bio-part { margin-left: 24px; }
+.cv-item { grid-template-columns: 105px 1fr; }
+@media screen and (max-width: 700px) {
+    .cv-item { grid-template-columns: 80px 1fr; column-gap: 14px; }
+}
+
+.pronouns {
+    font-size: 22px;
+    font-weight: normal;
+    color: #666666;
+    margin-left: 6px;
+    white-space: nowrap;
+}
