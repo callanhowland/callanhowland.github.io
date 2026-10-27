@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://callanhowland.github.io/sitemap.xml
