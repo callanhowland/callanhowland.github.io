@@ -404,3 +404,79 @@ nav a {
 .presentation-title {
     font-weight: 500;
 }
+
+
+/* ---------- Added: paper abstracts, draft links, teaching sections ---------- */
+
+.profile-photo {
+    object-position: center top;
+}
+
+.paper-status {
+    color: #666666;
+    font-size: 16px;
+}
+
+.paper-links {
+    font-size: 16px;
+    margin-top: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 2px 18px;
+}
+
+details {
+    flex: 0 0 auto;
+}
+
+details > summary {
+    display: inline;
+    cursor: pointer;
+    color: #63B7F8;
+    list-style: none;
+}
+
+details > summary::-webkit-details-marker { display: none; }
+details > summary::before { content: "\25B8\00a0"; }
+details[open] > summary::before { content: "\25BE\00a0"; }
+details > summary:hover { color: #FCBBF4; }
+
+details[open] {
+    flex-basis: 100%;
+}
+
+.abstract {
+    margin: 8px 0 6px;
+    padding: 10px 16px;
+    border-left: 4px solid #dddddd;
+    color: #444444;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+.section-nav {
+    font-size: 18px;
+    margin: 10px 0 30px;
+}
+
+.section-nav a { margin-right: 18px; }
+
+.section-note {
+    color: #444444;
+    font-size: 17px;
+    margin: 8px 0 20px;
+}
+
+.course-meta {
+    color: #666666;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 700px) {
+    body { padding-right: 10px; }
+    h1 { font-size: 38px; }
+    .about { flex-direction: column; }
+    .profile-photo { width: 220px; height: 293px; }
+    .cv-item { grid-template-columns: 70px 1fr; column-gap: 16px; }
+}
